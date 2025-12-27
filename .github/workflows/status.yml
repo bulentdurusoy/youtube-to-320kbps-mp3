@@ -1,0 +1,13 @@
+name: Repository Status
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  status-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Repository status check
+        run: echo "Repository is active and maintained."
